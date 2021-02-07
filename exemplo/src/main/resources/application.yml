@@ -1,0 +1,27 @@
+micronaut:
+  application:
+    name: exemplo
+  router:
+    versioning:
+      enabled: true
+      default-version: 1
+      header:
+        enabled: true
+        names:
+          - 'X-API-VERSION'
+          - 'Accept-Version'
+  server:
+    maxRequestSize: 1MB
+    host: localhost
+    cors:
+      enabled: true
+      configurations:
+        web:
+          allowedOrigins:
+            - ^http(|s):\/\/www\.tiporox\.com$
+    netty:
+      maxHeaderSize: 500KB
+      worker:
+        threads: 8
+      childOptions:
+        autoRead: true
