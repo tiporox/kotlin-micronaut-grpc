@@ -7,6 +7,7 @@
 - https://learn.openshift.com/servicemesh - explicação usando openshift
 - https://www.youtube.com/watch?v=Qk7FFBby43U - Tutorial como configurar o istio na aws com kubernetes, começa nos 20min
 - https://www.linuxtips.io/loja - Curso pago em português
+- https://istio.io/latest/docs/setup/platform-setup/ - Setup para diferentes plataformas
 
 ## O que é?
 
