@@ -26,3 +26,28 @@
 
 ![Estrutura Istio](https://istio.io/latest/docs/examples/bookinfo/withistio.svg)
 
+
+
+## Configurando na AWS
+
+
+https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html
+https://phoenixnap.com/kb/how-to-install-kubernetes-on-centos
+
+kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
+
+kubectl get pods --all-namespaces
+
+kubeadm join 172.31.43.171:6443 --token 6htcdj.4v9os5g3u4sy8e6w \
+--discovery-token-ca-cert-hash sha256:662038252d1b3ce13bbe2288852bcc04350e79da90ef19b27eb92e16a6740bc5
+
+
+https://istio.io/latest/docs/setup/getting-started/
+
+kubectl get pods -n istio-system
+kubectl get services -n istio-system
+kubectl get svc -n istio-system | grep kiali
+kubectl port-forward svc/kiali 20001:20001 -n istio-system --address 0.0.0.0
+
+URL: http://18.231.146.27:32037/productpage - Pagina teste
+URL: http://18.231.146.27:20001/kiali/
