@@ -53,10 +53,10 @@ URL: http://18.231.146.27:32037/productpage - Pagina teste
 URL: http://18.231.146.27:20001/kiali/
 
 
-## Pagina Demo: http://18.231.146.27:32037/productpage
+## Pagina Demo: http://18.231.146.27:32037/productpage ou http://ec2-18-231-146-27.sa-east-1.compute.amazonaws.com:32037/productpage
 
 ![Estrutura Istio](./page-demo.png)
 
-## Addon Kiali: http://18.231.146.27:20001/kiali/
+## Addon Kiali: http://18.231.146.27:20001/kiali/ ou http://ec2-18-231-146-27.sa-east-1.compute.amazonaws.com:20001/kiali/
 
 ![Estrutura Istio](./kiali.png)
