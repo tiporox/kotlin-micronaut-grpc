@@ -51,3 +51,12 @@ kubectl port-forward svc/kiali 20001:20001 -n istio-system --address 0.0.0.0
 
 URL: http://18.231.146.27:32037/productpage - Pagina teste
 URL: http://18.231.146.27:20001/kiali/
+
+
+## Pagina Demo: http://18.231.146.27:32037/productpage
+
+![Estrutura Istio](./page-demo.png)
+
+## Addon Kiali: http://18.231.146.27:20001/kiali/
+
+![Estrutura Istio](./kiali.png)
